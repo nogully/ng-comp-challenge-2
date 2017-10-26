@@ -1,0 +1,19 @@
+* {
+
+}
+
+header {
+  background-color: magenta;
+}
+
+main {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: row;
+}
+
+article {
+  background-color: blue;
+  width: 10rem;
+}
