@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  background-color: blue;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+}
+
+main {
+  background-color: #CCCCCC;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div {
+}
+
+.admin {
+  justify-content: flex-end;
+  margin: 5px 5px;
+    display: inline-flex;
+}
+
+h1 {
+  margin: 5px 5px;
+  justify-content: flex-end;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.headline {
+  background-color: #CCCCCC;
+  padding: 1rem;
+  width: 100%;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+  margin: 0px 10px;
+}
+
+ul {
+  list-style-type: none;
+  justify-content: flex-end;
+  margin-top: 3rem;
+}
+
+li{
+  display: inline-block;
+  margin: 0rem 1rem;
+}
+
+article {
+  background-color: white;
+  height: 300px;
+  margin: 5px;
+  width: 225px;
+  box-shadow: 2px 1px 1px gray;
+}
+
+#article-one {
+
+}
+
+#photo-image {
+  background-image: url('images/pexels-photo-247917.jpeg');
+  background-size: cover;
+  color: white;
+  height: 33%;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 5px;
+}
+
+h2 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1rem;
+  margin: 0px 10px;
+  margin-top: 10px
+}
+
+p {
+  color: black;
+  font-size: 1rem;
+  margin: 10px 10px;
+  padding: 0px;
+}
+.subtext {
+  color: #CCCCCC;
+  font-size: .7rem;
+  line-height: 1rem;
+  margin: 0px 10px;
+}
+
+#card-text{
+  display: flex;
+  flex-direction: column;
+}
+
+.text-patch {
+  background-color: #CCCCCC;
+  color: black;
+  font-size: .7em;
+  margin: 0px 10px;
+  padding: 5px;
+}
