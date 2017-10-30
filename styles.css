@@ -9,7 +9,7 @@ header {
   color: white;
   display: flex;
   flex-direction: column;
-  height: 100px;
+  min-height: 100px;
 }
 
 .admin {
@@ -19,16 +19,28 @@ header {
 }
 
 h1 {
-  font-family: 'Passion One', serif;
-  font-weight:700;
-  margin: 5px 5px;
-  font-size: 3em;
+  margin: 0px;
+  margin-left: auto;
+  line-height: 0em;
+  font-size: 2.5em;
 }
 
-.header {
+h2 {
+  font-weight: 700;
+  margin: 5px 5px;
+  font-size: 2em;
+}
+
+h4{
+  margin: 0px 10px;
+  margin-top: auto;
+}
+
+div.header {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  margin-top: auto;
+  padding: 10px;
 }
 
 .headline {
@@ -43,16 +55,11 @@ img {
   margin: 0px 10px;
 }
 
-ul {
-  list-style-type: none;
-  justify-content: flex-end;
-  margin-top: 3rem;
-}
-
-li{
-  display: inline-block;
+i {
   margin: 0rem 1rem;
 }
+
+
 
 
 /*MAIN*/
@@ -73,10 +80,9 @@ article {
 }
 
 /*CARD TEXT*/
-h2 {
-  font-family: 'Passion One';
+h3 {
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: 700;
   margin: 0px 10px;
   margin-top: 10px
 }
@@ -120,7 +126,7 @@ p {
 }
 
 .numeral {
-  color: blue;
+  color: red;
   font-weight: 700;
   font-size: 2em;
 }
@@ -160,7 +166,7 @@ p {
 }
 
 #photo-image7 {
-  background-image: url('images/dog-in-hat.jpg');
+  background-image: url('images/pexels-photo-450271.jpg');
 }
 
 #photo-image8 {
