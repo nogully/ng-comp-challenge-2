@@ -1,47 +1,39 @@
 * {
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
+/*HEADER*/
 header {
-  background-color: blue;
+  background-color: black;
   color: white;
   display: flex;
   flex-direction: column;
   height: 100px;
 }
 
-main {
-  background-color: #CCCCCC;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-div {
-}
-
 .admin {
   justify-content: flex-end;
   margin: 5px 5px;
-    display: inline-flex;
+  display: inline-flex;
 }
 
 h1 {
+  font-family: 'Passion One', serif;
+  font-weight:700;
   margin: 5px 5px;
-  justify-content: flex-end;
+  font-size: 3em;
 }
 
 .header {
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 .headline {
-  background-color: #CCCCCC;
-  padding: 1rem;
+  background-color: #ECECEC;
+  padding: 1em;
   width: 100%;
 }
 
@@ -62,20 +54,79 @@ li{
   margin: 0rem 1rem;
 }
 
+
+/*MAIN*/
+main {
+  background-color: #ECECEC;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 article {
   background-color: white;
-  height: 300px;
+  height: 350px;
   margin: 5px;
-  width: 225px;
+  width: 250px;
   box-shadow: 2px 1px 1px gray;
 }
 
-#article-one {
-
+/*CARD TEXT*/
+h2 {
+  font-family: 'Passion One';
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin: 0px 10px;
+  margin-top: 10px
 }
 
-#photo-image {
-  background-image: url('images/pexels-photo-247917.jpeg');
+p {
+  margin: 2px 10px;
+}
+
+.light-weight{
+  font-weight: 200;
+  font-size: .8em;
+}
+
+.card-text-wrap {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+}
+
+.subtext {
+  color: #999999;
+  font-size: .7rem;
+  line-height: 1rem;
+  margin: 0px 10px;
+}
+
+.text-patch {
+  background-color: #ECECEC;
+  color: black;
+  font-size: .7em;
+  margin: 5px 10px;
+  padding: 5px;
+}
+
+.small-caps {
+  color: #505050;
+  font-variant: small-caps;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+.numeral {
+  color: blue;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+/*PHOTOS*/
+.photo-image {
   background-size: cover;
   color: white;
   height: 33%;
@@ -84,35 +135,38 @@ article {
   padding: 5px;
 }
 
-h2 {
-  font-family: 'Roboto Slab', serif;
-  font-size: 1rem;
-  margin: 0px 10px;
-  margin-top: 10px
+#photo-image1 {
+  background-image: url('images/pexels-photo-247917.jpg');
 }
 
-p {
-  color: black;
-  font-size: 1rem;
-  margin: 10px 10px;
-  padding: 0px;
-}
-.subtext {
-  color: #CCCCCC;
-  font-size: .7rem;
-  line-height: 1rem;
-  margin: 0px 10px;
+#photo-image2 {
+  background-image: url('images/pexels-photo-373899.jpg');
 }
 
-#card-text{
-  display: flex;
-  flex-direction: column;
+#photo-image3 {
+  background-image: url('images/pexels-photo-428333.jpg');
 }
 
-.text-patch {
-  background-color: #CCCCCC;
-  color: black;
-  font-size: .7em;
-  margin: 0px 10px;
-  padding: 5px;
+#photo-image4 {
+  background-image: url('images/miller.jpg');
 }
+
+#photo-image5 {
+  background-image: url('images/pexels-photo-428341.jpg');
+}
+
+#photo-image6 {
+  background-image: url('images/kushner.jpg');
+}
+
+#photo-image7 {
+  background-image: url('images/dog-in-hat.jpg');
+}
+
+#photo-image8 {
+  background-image: url('images/black-cat-costume.jpg');
+}
+
+
+/*MEDIA QUERIES*/
+@media and 938
