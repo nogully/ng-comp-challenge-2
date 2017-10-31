@@ -78,14 +78,13 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin: 2% 5%;
+  margin: 2%;
 }
 
 article {
   background-color: white;
-  height: 350px;
-  margin: 5px;
-  width: 250px;
+  height: 24rem;
+  margin: 1rem;
   box-shadow: 2px 1px 1px gray;
 }
 
@@ -190,11 +189,23 @@ p {
   background-image: url('images/black-cat-costume.jpg');
 }
 
+@media screen and (max-width: 1566px) {
+  main {
+     margin: 2% 10%;
+  }
+}
+
+@media screen and (max-width: 1410px) {
+  main {
+     justify-content: flex-start;
+     margin: 2% 5%;
+  }
+}
 
 /*MEDIA QUERIES*/
-@media screen and (max-width: 866px) {
+@media screen and (max-width: 1253px) {
   main {
-     justify-content: space-around;
+     justify-content: center;
   }
 }
 
