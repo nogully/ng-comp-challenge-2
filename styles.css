@@ -1,8 +1,14 @@
 * {
   box-sizing: border-box;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
+body {
+  background-image:url('images/white_marble.jpg');
+  background-position:top left;
+  background-repeat:repeat;
+  background-attachment:fixed;
+}
 /*HEADER*/
 header {
   background-color: black;
@@ -20,38 +26,42 @@ header {
 
 h1 {
   margin: 0px;
+  font-family: 'IM Fell English SC', serif;
   margin-left: auto;
   line-height: 0em;
-  font-size: 2.5em;
+  font-size: 2.5rem;
+  letter-spacing: .2rem;
 }
 
 h2 {
+  font-family: 'IM Fell English SC', serif;
+  letter-spacing: .2em;
   font-weight: 700;
   margin: 5px 5px;
   font-size: 2em;
+  display: block;
 }
 
-h4{
+h4 {
   margin: 0px 10px;
   margin-top: auto;
 }
 
 div.header {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   margin-top: auto;
   padding: 10px;
 }
 
 .headline {
-  background-color: #ECECEC;
   padding: 1em;
   width: 100%;
 }
 
 img {
-  width: 20px;
-  height: 20px;
+  width: .75em;
+  height: .75em;
   margin: 0px 10px;
 }
 
@@ -64,11 +74,11 @@ i {
 
 /*MAIN*/
 main {
-  background-color: #ECECEC;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
+  margin: 2% 5%;
 }
 
 article {
@@ -80,6 +90,12 @@ article {
 }
 
 /*CARD TEXT*/
+.arrow {
+  height: 3em;
+  width: 3em;
+  margin: 5px 5px;
+}
+
 h3 {
   font-size: 1.2rem;
   font-weight: 700;
@@ -175,4 +191,25 @@ p {
 
 
 /*MEDIA QUERIES*/
-@media and 938
+@media screen and (max-width: 866px) {
+  main {
+     justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 731px) {
+  div.header {
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+    padding: 10px;
+  } 
+
+  h1 {
+    margin: .5em 0em;
+  }
+
+  h4 {
+    margin: 10px 10px;
+  }
+}
