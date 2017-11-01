@@ -222,6 +222,7 @@ p {
   article {
     height: 28rem;
     width: 21rem;
+    min-width: 285px;
   }
 }
 
@@ -252,5 +253,12 @@ p {
 
   h4 {
     margin: 10px 10px;
+  }
+}
+
+@media screen and (max-width: 331px){
+   article {
+    height: 28rem;
+    width: 21rem;
   }
 }
